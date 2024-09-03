@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SellerDialog</class>
+ <widget class="QDialog" name="SellerDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Мой профиль</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pushButton_catalog">
+         <property name="text">
+          <string>Мой каталог</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLabel" name="label_amount">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QLabel" name="label_date">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_name">
+         <property name="text">
+          <string>Изменить имя</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="label_myname">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="pushButton_exit">
+         <property name="text">
+          <string>Выйти из аккаунта</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="label_review">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_add">
+      <attribute name="title">
+       <string>Добавить товар</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spinBox_price">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>9999999</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QCheckBox" name="checkBox_col">
+         <property name="text">
+          <string>Другой</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_mtrl">
+         <property name="text">
+          <string>Материал:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_descr">
+         <property name="text">
+          <string>Описание:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0" colspan="2">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_ok">
+           <property name="text">
+            <string>Добавить в каталог</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_clear">
+           <property name="text">
+            <string>Стереть все</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="1">
+        <widget class="QTextEdit" name="textEdit_descr"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_col">
+         <property name="text">
+          <string>Цвет:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="checkBox_mtrl">
+         <property name="text">
+          <string>Другой</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_name">
+         <property name="text">
+          <string>Название:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit_mtrl">
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEdit_col">
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="comboBox_mtrl"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_price">
+         <property name="text">
+          <string>Цена:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_name">
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="comboBox_col"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_update">
+      <attribute name="title">
+       <string>Изменить товар</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="3" column="1">
+        <widget class="QComboBox" name="comboBox_mtrl_u"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_descr_u">
+         <property name="text">
+          <string>Описание:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_name_u">
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0" colspan="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_u">
+         <item>
+          <widget class="QPushButton" name="pushButton_ok_u">
+           <property name="text">
+            <string>Сохранить изменения</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_clear_u">
+           <property name="text">
+            <string>Стереть все</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="checkBox_mtrl_u">
+         <property name="text">
+          <string>Другой</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEdit_mtrl_u">
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QCheckBox" name="checkBox_col_u">
+         <property name="text">
+          <string>Другой</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_name_u">
+         <property name="text">
+          <string>Название:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QTextEdit" name="textEdit_descr_u"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_price_u">
+         <property name="text">
+          <string>Цена:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="lineEdit_col_u">
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_mtrl_u">
+         <property name="text">
+          <string>Материал:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_col_u">
+         <property name="text">
+          <string>Цвет:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QComboBox" name="comboBox_col_u"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="spinBox_price_u">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>9999999</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBox_product_u">
+         <item>
+          <property name="text">
+           <string>Выберите товар</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_delete">
+      <attribute name="title">
+       <string>Удалить товар</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_ok_d">
+         <property name="text">
+          <string>Удалить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <widget class="QComboBox" name="comboBox_product_d"/>
+       </item>
+       <item row="0" column="0">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>pushButton_name</tabstop>
+  <tabstop>pushButton_catalog</tabstop>
+  <tabstop>pushButton_exit</tabstop>
+  <tabstop>lineEdit_name</tabstop>
+  <tabstop>spinBox_price</tabstop>
+  <tabstop>comboBox_mtrl</tabstop>
+  <tabstop>checkBox_mtrl</tabstop>
+  <tabstop>lineEdit_mtrl</tabstop>
+  <tabstop>comboBox_col</tabstop>
+  <tabstop>checkBox_col</tabstop>
+  <tabstop>lineEdit_col</tabstop>
+  <tabstop>textEdit_descr</tabstop>
+  <tabstop>pushButton_ok</tabstop>
+  <tabstop>pushButton_clear</tabstop>
+  <tabstop>comboBox_product_u</tabstop>
+  <tabstop>lineEdit_name_u</tabstop>
+  <tabstop>spinBox_price_u</tabstop>
+  <tabstop>comboBox_mtrl_u</tabstop>
+  <tabstop>checkBox_mtrl_u</tabstop>
+  <tabstop>lineEdit_mtrl_u</tabstop>
+  <tabstop>comboBox_col_u</tabstop>
+  <tabstop>checkBox_col_u</tabstop>
+  <tabstop>lineEdit_col_u</tabstop>
+  <tabstop>textEdit_descr_u</tabstop>
+  <tabstop>pushButton_ok_u</tabstop>
+  <tabstop>pushButton_clear_u</tabstop>
+  <tabstop>comboBox_product_d</tabstop>
+  <tabstop>pushButton_ok_d</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

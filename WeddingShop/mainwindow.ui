@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page_intro">
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="2" column="2">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pushButton_toc">
+          <property name="text">
+           <string>Перейти в каталог</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>30</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Добро пожаловать в наш магазин!</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_catalog">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="2">
+           <widget class="QComboBox" name="comboBox_srch_mtr">
+            <item>
+             <property name="text">
+              <string>Смотреть все</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Кружевные</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Атлас</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Шифон</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Фатин</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Блестящие</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Прозрачные</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Другой</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_srch_pr">
+            <item>
+             <property name="text">
+              <string>Смотреть все</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>От 25 000 до 60 000 руб</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>От 60 000 до 100 000 руб</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>От 100 000 до 400 000 руб</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_srch_mtr">
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>МАТЕРИАЛ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_srch_pr">
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>ЦЕНОВАЯ КАТЕГОРИЯ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_srch_col">
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>ЦВЕТ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QComboBox" name="comboBox_srch_col">
+            <item>
+             <property name="text">
+              <string>Смотреть все</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Айвори</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Бежевый</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Белый</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Молочный</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Пыльная роза</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Другой</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="lineEdit_srch">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>ПОИСК</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="tableWidget_catalog">
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Название</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Продавец</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Цена</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Материал</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Цвет</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string/>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string/>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_item"/>
+      <widget class="QWidget" name="page_profile">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_prf_name">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_prf_name">
+             <property name="text">
+              <string>Изменить</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QLabel" name="label_prf_amount">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLabel" name="label_prf_r">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_cart">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget_cart">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Название</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Цена</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Дата добавления</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string/>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string/>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_cart">
+          <property name="text">
+           <string>Купить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_collection">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget_collection">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Название</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Цена</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Продавец</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Дата покупки</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string/>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+    </font>
+   </property>
+   <widget class="QMenu" name="menu_catalog">
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>Платья</string>
+    </property>
+    <widget class="QMenu" name="menu_price">
+     <property name="title">
+      <string>Ценовая категория</string>
+     </property>
+     <addaction name="action_25to60"/>
+     <addaction name="action_60to100"/>
+     <addaction name="action_100to400"/>
+    </widget>
+    <widget class="QMenu" name="menu_material">
+     <property name="title">
+      <string>Материал</string>
+     </property>
+     <addaction name="action_lace"/>
+     <addaction name="action_satin"/>
+     <addaction name="action_chiffon"/>
+     <addaction name="action_fatin"/>
+     <addaction name="action_sparkly"/>
+     <addaction name="action_transparent"/>
+     <addaction name="action_mtrl_other"/>
+    </widget>
+    <widget class="QMenu" name="menu_color">
+     <property name="title">
+      <string>Цвет</string>
+     </property>
+     <addaction name="action_ivory"/>
+     <addaction name="action_beige"/>
+     <addaction name="action_white"/>
+     <addaction name="action_lactic"/>
+     <addaction name="action_dusty_rose"/>
+     <addaction name="action_col_other"/>
+    </widget>
+    <addaction name="action_catalog"/>
+    <addaction name="menu_price"/>
+    <addaction name="menu_material"/>
+    <addaction name="menu_color"/>
+   </widget>
+   <widget class="QMenu" name="menu_account">
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>Аккаунт</string>
+    </property>
+    <addaction name="action_profile"/>
+    <addaction name="action_history"/>
+    <addaction name="action_cart"/>
+   </widget>
+   <widget class="QMenu" name="menu_login">
+    <property name="title">
+     <string>Войти</string>
+    </property>
+    <addaction name="action_login"/>
+   </widget>
+   <addaction name="menu_catalog"/>
+   <addaction name="menu_account"/>
+   <addaction name="menu_login"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_profile">
+   <property name="text">
+    <string>Мой профиль</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_history">
+   <property name="text">
+    <string>Мои покупки</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_cart">
+   <property name="text">
+    <string>Моя корзина</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_catalog">
+   <property name="text">
+    <string>Смотреть все</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="action_25to60">
+   <property name="text">
+    <string>От 25 000 до 65 000 руб</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+    </font>
+   </property>
+  </action>
+  <action name="action_60to100">
+   <property name="text">
+    <string>От 60 000 до 100 000</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+    </font>
+   </property>
+  </action>
+  <action name="action_100to400">
+   <property name="text">
+    <string>От 100 000 до 400 000</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+    </font>
+   </property>
+  </action>
+  <action name="action_login">
+   <property name="text">
+    <string>Войти в аккаунт</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="action_lace">
+   <property name="text">
+    <string>Кружевные</string>
+   </property>
+  </action>
+  <action name="action_satin">
+   <property name="text">
+    <string>Атлас</string>
+   </property>
+  </action>
+  <action name="action_chiffon">
+   <property name="text">
+    <string>Шифон</string>
+   </property>
+  </action>
+  <action name="action_fatin">
+   <property name="text">
+    <string>Фатин</string>
+   </property>
+  </action>
+  <action name="action_sparkly">
+   <property name="text">
+    <string>Блестящие</string>
+   </property>
+  </action>
+  <action name="action_transparent">
+   <property name="text">
+    <string>Прозрачные</string>
+   </property>
+  </action>
+  <action name="action_mtrl_other">
+   <property name="text">
+    <string>Другой</string>
+   </property>
+  </action>
+  <action name="action_ivory">
+   <property name="text">
+    <string>Айвори</string>
+   </property>
+  </action>
+  <action name="action_beige">
+   <property name="text">
+    <string>Бежевый</string>
+   </property>
+  </action>
+  <action name="action_white">
+   <property name="text">
+    <string>Белый</string>
+   </property>
+  </action>
+  <action name="action_lactic">
+   <property name="text">
+    <string>Молочный</string>
+   </property>
+  </action>
+  <action name="action_dusty_rose">
+   <property name="text">
+    <string>Пыльная роза</string>
+   </property>
+  </action>
+  <action name="action_col_other">
+   <property name="text">
+    <string>Другой</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_srch</tabstop>
+  <tabstop>comboBox_srch_pr</tabstop>
+  <tabstop>comboBox_srch_mtr</tabstop>
+  <tabstop>comboBox_srch_col</tabstop>
+  <tabstop>tableWidget_catalog</tabstop>
+  <tabstop>pushButton_prf_name</tabstop>
+  <tabstop>tableWidget_cart</tabstop>
+  <tabstop>pushButton_cart</tabstop>
+  <tabstop>tableWidget_collection</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
